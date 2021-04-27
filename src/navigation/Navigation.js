@@ -23,7 +23,6 @@ const Navigation = () => (
         component={Registration}
       />
       <Route
-        exact
         path="/traffic"
         component={Traffic}
       />
