@@ -9,6 +9,7 @@ import Buses from './Buses/Buses';
 import Taxi from './Taxi/Taxi';
 import BlaBlaCar from './BlaBlaCar/BlaBlaCar';
 import OverallAnalytics from './OverallAnalytics/OverallAnalytics';
+import TaxiAnalytics from './TaxiAnalytics/TaxiAnalytics';
 
 import styles from './Traffic.module.sass';
 
@@ -36,6 +37,11 @@ const Traffic = (props) => (
           exact
           path="/traffic/overall"
           component={OverallAnalytics}
+        />
+        <Route
+          exact
+          path="/traffic/taxi_charts"
+          component={TaxiAnalytics}
         />
       </Switch>
     </div>

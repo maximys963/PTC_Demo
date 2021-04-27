@@ -26,7 +26,7 @@ const Login = (props) => {
 
   const onFinish = (values) => {
     console.log('Success:', values);
-    history.push('/traffic');
+    history.push('/traffic/buses');
   };
 
   const onFinishFailed = (errorInfo) => {

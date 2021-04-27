@@ -52,10 +52,20 @@ const UserMenu = (props) => {
         >
           Загальна
         </Menu.Item>
-        <Menu.Item key="6">Таксі</Menu.Item>
+        <Menu.Item
+            key="6"
+            onClick={() => history.push('/traffic/taxi_charts')}
+        >
+          Таксі
+        </Menu.Item>
       </SubMenu>
       <SubMenu key="sub4" icon={<SettingOutlined />} title="Аккаунт">
-        <Menu.Item key="12">Вийти</Menu.Item>
+        <Menu.Item
+            onClick={() => history.push('/')}
+            key="12"
+        >
+          Вийти
+        </Menu.Item>
       </SubMenu>
     </Menu>
   );
