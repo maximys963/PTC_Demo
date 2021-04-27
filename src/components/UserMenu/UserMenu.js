@@ -46,7 +46,12 @@ const UserMenu = (props) => {
         </Menu.Item>
       </SubMenu>
       <SubMenu key="sub2" icon={<StockOutlined />} title="Аналітика">
-        <Menu.Item key="5">Загальна</Menu.Item>
+        <Menu.Item
+          onClick={() => history.push('/traffic/overall')}
+          key="5"
+        >
+          Загальна
+        </Menu.Item>
         <Menu.Item key="6">Таксі</Menu.Item>
       </SubMenu>
       <SubMenu key="sub4" icon={<SettingOutlined />} title="Аккаунт">

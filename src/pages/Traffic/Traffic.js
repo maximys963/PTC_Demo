@@ -8,6 +8,7 @@ import UserMenu from '../../components/UserMenu/UserMenu';
 import Buses from './Buses/Buses';
 import Taxi from './Taxi/Taxi';
 import BlaBlaCar from './BlaBlaCar/BlaBlaCar';
+import OverallAnalytics from './OverallAnalytics/OverallAnalytics';
 
 import styles from './Traffic.module.sass';
 
@@ -30,6 +31,11 @@ const Traffic = (props) => (
           exact
           path="/traffic/blablacar"
           component={BlaBlaCar}
+        />
+        <Route
+          exact
+          path="/traffic/overall"
+          component={OverallAnalytics}
         />
       </Switch>
     </div>

@@ -120,7 +120,7 @@ const data = [
   {
     key: '9',
     number: '14',
-    direction: 'м.Буча - с.м.т.Гостомел',
+    direction: 'м.Буча - с.м.т.Гостомель',
     price: '8 грн',
     tags: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Нд'],
     workTime: '5:30 - 23:00',
@@ -129,7 +129,7 @@ const data = [
   {
     key: '10',
     number: '15',
-    direction: 'м.Буча - с.м.т.Гостомел',
+    direction: 'м.Буча - с.м.т.Гостомель',
     price: '8 грн',
     tags: ['Пн', 'Вт', 'Ср', 'Чт', 'Пт', 'Сб', 'Нд'],
     workTime: '8:00 - 23:00',
@@ -259,7 +259,7 @@ const Buses = (props) => {
 
   const onSearch = (value) => {
     const updatedDataSet = busesDataSet.map((item) => {
-      if (item.direction.includes(value)) {
+      if (item.direction.toLowerCase().includes(value.toLowerCase())) {
         return {
           ...item,
           isShown: true,
@@ -279,7 +279,7 @@ const Buses = (props) => {
     <div className={styles.container}>
       <div className={styles.search_container}>
         <Search
-          placeholder="Введіть ваш маршрут"
+          placeholder="Введіть ваш пункт призначення"
           allowClear
           size="large"
           enterButton="Шукати"
