@@ -37,7 +37,7 @@ const OverallAnalytics = (props) => {
     new Chart(customBarChartRef, {
       type: 'bar',
       data: {
-        labels: ['Таксі', 'Маршрутне таксі', 'BlaBlaCar', 'Велисопед', 'Електросамокат'],
+        labels: ['Таксі', 'Маршрутне таксі', 'BlaBlaCar', 'Велосипед', 'Електросамокат'],
         datasets: [{
           label: 'Швидкість',
           data: [60, 40, 65, 25, 30],
