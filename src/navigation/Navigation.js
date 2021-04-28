@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter,
+  HashRouter,
   Switch,
   Route,
 } from 'react-router-dom';
@@ -10,7 +10,7 @@ import Registration from '../pages/Registration/Registration';
 import Traffic from '../pages/Traffic/Traffic';
 
 const Navigation = () => (
-  <BrowserRouter>
+  <HashRouter>
     <Switch>
       <Route
         exact
@@ -27,7 +27,7 @@ const Navigation = () => (
         component={Traffic}
       />
     </Switch>
-  </BrowserRouter>
+  </HashRouter>
 );
 
 export default Navigation;
