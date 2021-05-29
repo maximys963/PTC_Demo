@@ -53,16 +53,22 @@ const UserMenu = (props) => {
           Загальна
         </Menu.Item>
         <Menu.Item
-            key="6"
-            onClick={() => history.push('/traffic/taxi_charts')}
+          key="6"
+          onClick={() => history.push('/traffic/taxi_charts')}
         >
           Таксі
         </Menu.Item>
       </SubMenu>
       <SubMenu key="sub4" icon={<SettingOutlined />} title="Аккаунт">
         <Menu.Item
-            onClick={() => history.push('/')}
-            key="12"
+          onClick={() => history.push('/traffic/map')}
+          key="13"
+        >
+          Мій маршрут
+        </Menu.Item>
+        <Menu.Item
+          onClick={() => history.push('/')}
+          key="12"
         >
           Вийти
         </Menu.Item>

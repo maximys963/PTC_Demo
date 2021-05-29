@@ -10,6 +10,7 @@ import Taxi from './Taxi/Taxi';
 import BlaBlaCar from './BlaBlaCar/BlaBlaCar';
 import OverallAnalytics from './OverallAnalytics/OverallAnalytics';
 import TaxiAnalytics from './TaxiAnalytics/TaxiAnalytics';
+import Map from '../Map/Map';
 
 import styles from './Traffic.module.sass';
 
@@ -42,6 +43,11 @@ const Traffic = (props) => (
           exact
           path="/traffic/taxi_charts"
           component={TaxiAnalytics}
+        />
+        <Route
+          exact
+          path="/traffic/map"
+          component={Map}
         />
       </Switch>
     </div>

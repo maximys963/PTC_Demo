@@ -14,7 +14,7 @@ const driversDataSet = [
     id: '1',
     name: 'Baсиль',
     img: 'https://pbs.twimg.com/media/BcINeMVCIAABeWd.jpg',
-    direction: 'напрям: Ірпінь - Лвів, автомобіль: Audi A5 ',
+    direction: 'напрям: Ірпінь - Львів, автомобіль: Audi A5 ',
     price: '400 грн',
     isBooked: false,
   },
