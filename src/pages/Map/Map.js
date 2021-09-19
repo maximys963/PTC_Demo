@@ -5,7 +5,7 @@ import map from '../../img/map.png';
 
 import styles from './Map.module.sass';
 
-function Map(props) {
+function Map() {
   return (
     <div className={styles.container}>
       <div className={styles.input_container}>
